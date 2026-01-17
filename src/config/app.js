@@ -1,9 +1,9 @@
 const express = require("express");
 const morgan = require("morgan");
 
-const routes = require("./routes");
-const { notFound } = require("./middleware/notFound");
-const { errorHandler } = require("./middleware/errorHandler");
+const routes = require("../routes");
+const { notFound } = require("../middleware/notFound");
+const { errorHandler } = require("../middleware/errorHandler");
 
 const app = express();
 
