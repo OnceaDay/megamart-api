@@ -41,9 +41,22 @@ megmart-api-project/
     │   ├── customers.routes.js
     │   ├── carts.routes.js
     │   └── orders.routes.js
-    ├── controllers/   # (to be implemented)
-    ├── models/        # (to be implemented)
+    ├── controllers/
+    │   ├── products.controller.js
+    │   ├── customers.controller.js
+    │   ├── carts.controller.js
+    │   └── orders.controller.js
+    ├── models/
+    │   ├── Product.js
+    │   ├── Customer.js
+    │   ├── Cart.js
+    │   └── Order.js
     └── utils/
+    ├── asyncHandler.js
+    ├── validateObjectId.js
+    ├── normalizeEmail.js
+    └── calculateCartTotal.js
+```
 ```
 
 ---
@@ -84,7 +97,7 @@ Routes are mounted under:
 All feature routes are mounted through a single router:
 
 ```js
-/app.use("/api", routes)
+app.use("/api", routes);
 ```
 
 Mounted resources:
@@ -97,15 +110,78 @@ Each resource has its own router file to keep concerns isolated and scalable.
 
 ---
 
-### Example: Customers Routes
+## Controllers & Business Logic
 
-`src/routes/customers.routes.js`:
-- `GET /api/customers` → sanity check route
-- `GET /api/customers/boom` → intentional error route (used to verify error handling)
+Controllers are responsible for handling request logic and communicating with the database through Mongoose models. Routes remain thin and simply delegate work to controllers.
 
-This confirmed:
+Implemented controllers:
+- **Products** — full CRUD with filtering, sorting, and optional pagination
+- **Customers** — full CRUD with unique email enforcement and search
+- **Carts** — add, update, remove, and clear cart items with total calculation
+- **Orders** — place orders from carts, snapshot pricing, decrement stock, and manage order status
+
+This separation ensures clean, testable, and scalable code.
+
+---
+
+## Models
+
+Mongoose models define the core domain entities:
+
+- **Product**
+  - name, description, price, category, stock, images
+  - supports filtering and sorting
+
+- **Customer**
+  - name, email (unique), address, phone
+
+- **Cart**
+  - one cart per customer
+  - items reference products with quantities
+
+- **Order**
+  - snapshot of purchased items
+  - total price calculation
+  - status workflow: pending → shipped → delivered / cancelled
+
+---
+
+## Utilities (Shared Helpers)
+
+As the application grew, repeated logic was **normalized into reusable utility modules** to keep controllers thin and consistent.
+
+Utilities live in `src/utils/` and contain **pure helper functions** that are framework-agnostic and reusable across controllers.
+
+### Implemented Utilities
+
+- **`asyncHandler.js`**  
+  Wraps async controller functions and forwards errors to the global error handler, eliminating repetitive try/catch blocks.
+
+- **`validateObjectId.js`**  
+  Centralized MongoDB ObjectId validation used across Products, Customers, Carts, and Orders controllers.
+
+- **`normalizeEmail.js`**  
+  Ensures consistent lowercase and trimmed email values when creating or updating customers.
+
+- **`calculateCartTotal.js`**  
+  Computes cart totals based on populated product prices and quantities, keeping cart logic consistent.
+
+This normalization step improved maintainability, reduced duplication, and clarified controller responsibilities.
+
+---
+
+## Example: Customers Routes
+
+`src/routes/customers.routes.js` exposes:
+- `GET /api/customers`
+- `GET /api/customers/:id`
+- `POST /api/customers`
+- `PATCH /api/customers/:id`
+- `DELETE /api/customers/:id`
+
+This confirms:
 - Correct route stacking
-- Proper use of `next(err)`
+- Controller-based logic
 - Centralized error handling works as expected
 
 ---
@@ -160,26 +236,64 @@ Expected output:
 
 - `.env` is excluded via `.gitignore`
 - Project uses incremental, meaningful commits
-- Current commit milestone includes:
-  - Express app wiring
-  - MongoDB connection
-  - Modular routing
-  - Centralized error handling
+- Major milestones committed:
+  - Express app wiring and MongoDB connection
+  - Modular routing and centralized error handling
+  - Domain models and CRUD controllers
+  - **Utility normalization to reduce duplicated logic**
 
 ---
 
-## Next Steps
-Planned implementation:
-- Mongoose models (Products, Customers, Carts, Orders)
-- Controllers to separate business logic from routes
-- Filtering, sorting, and pagination
-- Order creation workflow
-- Stock management logic
+## Health & Error Handling
+
+---
+
+## API Usage Examples
+
+### Products
+- `GET /api/products`
+- `POST /api/products`
+- `PATCH /api/products/:id`
+- `DELETE /api/products/:id`
+
+Supports filtering and sorting:
+```
+/api/products?category=tech&minPrice=100&maxPrice=600&sort=-price
+```
+
+---
+
+### Customers
+- `GET /api/customers`
+- `POST /api/customers`
+- `PATCH /api/customers/:id`
+- `DELETE /api/customers/:id`
+
+---
+
+### Carts
+- `GET /api/carts/:customerId`
+- `POST /api/carts/:customerId/items`
+- `PATCH /api/carts/:customerId/items/:productId`
+- `DELETE /api/carts/:customerId/items/:productId`
+- `DELETE /api/carts/:customerId/clear`
+
+---
+
+### Orders
+- `POST /api/orders/from-cart/:customerId`
+- `GET /api/orders`
+- `GET /api/orders/:id`
+- `PATCH /api/orders/:id/status`
 
 ---
 
 ## Status
-🚧 **Foundation complete** — server, routing, and error handling are stable and production-aligned.
+**Core domain implemented** — models, controllers, and routes for Products, Customers, Carts, and Orders are fully functional.
+
+The API now supports complete e-commerce workflows end-to-end.
+
+**Foundation complete** — server, routing, and error handling are stable and production-aligned.
 
 Further features will be layered on top of this foundation.
 
