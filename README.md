@@ -166,6 +166,17 @@ Utilities live in `src/utils/` and contain **pure helper functions** that are fr
 - **`calculateCartTotal.js`**  
   Computes cart totals based on populated product prices and quantities, keeping cart logic consistent.
 
+### Rule of Thumb (Dependency Hygiene)
+
+> **If a file does not directly reference a library, it should not import that library.**
+
+Example:
+- Controllers **do not** import `mongoose` directly
+- ObjectId validation lives in `validateObjectId.js`
+- `mongoose` is imported **once**, in the utility that actually uses it
+
+This keeps dependencies minimal, avoids hidden coupling, and ensures each file has a single, clear responsibility.
+
 This normalization step improved maintainability, reduced duplication, and clarified controller responsibilities.
 
 ---
@@ -288,12 +299,29 @@ Supports filtering and sorting:
 
 ---
 
+## Frontend Demonstration (Planned)
+
+Although MegaMart was designed backend-first, a **simple frontend demo** can be layered on top to demonstrate a fully operational e-commerce workflow.
+
+### Intended Frontend Responsibilities
+- Display product listings (GET `/api/products`)
+- Create or select a customer (POST `/api/customers`)
+- Add/remove items from cart (POST/PATCH `/api/carts/:customerId/items`)
+- Display cart totals (GET `/api/carts/:customerId`)
+- Checkout and place an order (POST `/api/orders/from-cart/:customerId`)
+- Display order confirmation/history (GET `/api/orders`)
+
+The frontend will act purely as a consumer of the API using `fetch` or a lightweight framework (e.g. vanilla HTML/JS or React), keeping all business logic in the backend.
+
+---
+
 ## Status
-**Core domain implemented** — models, controllers, and routes for Products, Customers, Carts, and Orders are fully functional.
 
-The API now supports complete e-commerce workflows end-to-end.
+✅ **Backend complete** — models, controllers, routes, utilities, and error handling are fully implemented and verified.
 
-**Foundation complete** — server, routing, and error handling are stable and production-aligned.
+✅ **Utilities normalized** — shared logic extracted and documented; controllers are thin and dependency-clean.
 
-Further features will be layered on top of this foundation.
+🚧 **Frontend demo (optional)** — planned as a lightweight layer to showcase the API in a full-stack context.
+
+The MegaMart API is production-ready as a backend service and can now be demonstrated as a complete e-commerce application with a minimal frontend.
 
