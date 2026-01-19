@@ -1,7 +1,15 @@
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
-  res.json({ message: "orders route works" });
-});
+const {
+  placeOrderFromCart,
+  getOrders,
+  getOrderById,
+  updateOrderStatus,
+} = require("../controllers/orders.controller");
+
+router.post("/from-cart/:customerId", placeOrderFromCart);
+router.get("/", getOrders);
+router.get("/:id", getOrderById);
+router.patch("/:id/status", updateOrderStatus);
 
 module.exports = router;

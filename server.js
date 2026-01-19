@@ -8,7 +8,8 @@ const PORT = env.PORT || 3000;
   try {
     await connectToMongoDB();
     app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
+
+      console.log(`Server DB is running and listening on port ${PORT}`);
     });
   } catch (err) {
     console.error("Failed to start server:", err);

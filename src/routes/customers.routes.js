@@ -1,14 +1,17 @@
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
-  res.json({ message: "customers route works" });
-});
+const {
+  getCustomers,
+  getCustomerById,
+  createCustomer,
+  updateCustomer,
+  deleteCustomer,
+} = require("../controllers/customers.controller");
 
-router.get("/boom", (req, res, next) => {
-  const err = new Error("Something exploded");
-  err.statusCode = 400;
-  next(err);
-});
-
+router.get("/", getCustomers);
+router.get("/:id", getCustomerById);
+router.post("/", createCustomer);
+router.patch("/:id", updateCustomer);
+router.delete("/:id", deleteCustomer);
 
 module.exports = router;
