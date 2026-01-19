@@ -317,11 +317,11 @@ The frontend will act purely as a consumer of the API using `fetch` or a lightwe
 
 ## Status
 
-✅ **Backend complete** — models, controllers, routes, utilities, and error handling are fully implemented and verified.
+**Backend complete** — models, controllers, routes, utilities, and error handling are fully implemented and verified.
 
-✅ **Utilities normalized** — shared logic extracted and documented; controllers are thin and dependency-clean.
+**Utilities normalized** — shared logic extracted and documented; controllers are thin and dependency-clean.
 
-🚧 **Frontend demo (optional)** — planned as a lightweight layer to showcase the API in a full-stack context.
+**Frontend demo (optional)** — planned as a lightweight layer to showcase the API in a full-stack context.
 
 The MegaMart API is production-ready as a backend service and can now be demonstrated as a complete e-commerce application with a minimal frontend.
 
