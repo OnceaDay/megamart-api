@@ -1,0 +1,798 @@
+[
+  {
+    "sku": "BR-BED-001",
+    "name": "Apartment Bed Frame (Low Profile)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "bed",
+    "roomType": "bedroom",
+    "price": 189,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 18,
+    "tags": [
+      "compact",
+      "lowProfile"
+    ],
+    "accessibilityFeatures": [
+      "lowProfileEntry",
+      "minimalForceRequired"
+    ],
+    "features": [
+      "apartmentSized",
+      "quickAssembly",
+      "spaceEfficient",
+      "toolFreeAssembly"
+    ],
+    "shortDescription": "Low-profile bed frame designed to fit smaller bedrooms and simplify setup.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-BED-001-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Low-profile apartment bed frame"
+  },
+  {
+    "sku": "BR-MAT-002",
+    "name": "Firm Support Mattress (Apartment Size)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "mattress",
+    "roomType": "bedroom",
+    "price": 329,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 12,
+    "tags": [
+      "compact",
+      "easyClean",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "pressureReliefSurface",
+      "seatedUseFriendly",
+      "transferFriendly"
+    ],
+    "features": [
+      "apartmentSized",
+      "easyCleanSurface",
+      "firmSupport"
+    ],
+    "shortDescription": "Firm mattress made for consistent support and easy maintenance.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-MAT-002-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Firm support mattress"
+  },
+  {
+    "sku": "BR-DRS-003",
+    "name": "Vertical Dresser (Space Efficient)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "dresser",
+    "roomType": "bedroom",
+    "price": 149,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 22,
+    "tags": [
+      "compact",
+      "easyClean",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "lowReachHeight",
+      "roundedEdges"
+    ],
+    "features": [
+      "builtInStorage",
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Tall dresser that saves floor space while keeping essentials accessible.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-DRS-003-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Vertical space-saving dresser"
+  },
+  {
+    "sku": "BR-NSD-004",
+    "name": "Nightstand with Built-In Storage",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "nightstand",
+    "roomType": "bedroom",
+    "price": 69,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 35,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "lowReachHeight",
+      "roundedEdges"
+    ],
+    "features": [
+      "builtInStorage",
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact nightstand that keeps bedside items within reach.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-NSD-004-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact bedside nightstand"
+  },
+  {
+    "sku": "BR-LMP-005",
+    "name": "Bedside Lamp (Easy Switch)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "lamp",
+    "roomType": "bedroom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 60,
+    "tags": [
+      "compact",
+      "grabFriendly"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators",
+      "oneHandOperation",
+      "pushButtonControl"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Simple bedside lamp with easy on/off control.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-LMP-005-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bedside lamp with easy control"
+  },
+  {
+    "sku": "BR-MIR-006",
+    "name": "Full-Length Mirror (Lean & Secure)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "mirror",
+    "roomType": "bedroom",
+    "price": 39,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 25,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "wallMountReady"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Full-length mirror that fits tight spaces and supports secure placement.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-MIR-006-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Full-length mirror for small bedrooms"
+  },
+  {
+    "sku": "BR-SHT-007",
+    "name": "Sheet Set (Easy Wash)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "sheets",
+    "roomType": "bedroom",
+    "price": 29,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 80,
+    "tags": [
+      "easyClean",
+      "lightweight"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Soft sheet set designed for easy washing and quick change-outs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-SHT-007-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Sheet set for easy washing"
+  },
+  {
+    "sku": "BR-PCAS-008",
+    "name": "Pillowcase Pair (Breathable)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "pillowcases",
+    "roomType": "bedroom",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "easyClean",
+      "lightweight"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Breathable pillowcases that clean easily and store flat.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-PCAS-008-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Breathable pillowcases"
+  },
+  {
+    "sku": "BR-COMF-009",
+    "name": "Comforter (Washable Cover)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "comforter",
+    "roomType": "bedroom",
+    "price": 49,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 45,
+    "tags": [
+      "easyClean",
+      "lightweight"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "removablePartsAccessible"
+    ],
+    "features": [
+      "easyCleanSurface",
+      "plushComfort",
+      "washableCover"
+    ],
+    "shortDescription": "Comforter with easy-care design for quick refresh and comfort.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-COMF-009-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Washable comforter"
+  },
+  {
+    "sku": "BR-BLKT-010",
+    "name": "Warm Blanket (Lightweight)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "blanket",
+    "roomType": "bedroom",
+    "price": 22,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 70,
+    "tags": [
+      "compact",
+      "lightweight"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "plushComfort",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Warm blanket that’s easy to handle and store in small closets.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-BLKT-010-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Lightweight warm blanket"
+  },
+  {
+    "sku": "BR-PIL-011",
+    "name": "Support Pillow (Ergonomic)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "pillow",
+    "roomType": "bedroom",
+    "price": 18,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 90,
+    "tags": [
+      "easyClean",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "ergonomicDesign",
+      "pressureReliefSurface"
+    ],
+    "features": [
+      "ergonomicSupport",
+      "firmSupport"
+    ],
+    "shortDescription": "Support pillow designed for comfort and better sleep posture.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-PIL-011-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Ergonomic support pillow"
+  },
+  {
+    "sku": "BR-HANG-012",
+    "name": "Clothing Hangers (Pack)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "hanger",
+    "roomType": "bedroom",
+    "price": 10,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 200,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Simple hanger pack to organize closets without taking extra space.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-HANG-012-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Clothing hanger pack"
+  },
+  {
+    "sku": "BR-CORG-013",
+    "name": "Closet Organization Kit (Hanging)",
+    "productType": "single",
+    "category": "bedroomItems",
+    "subcategory": "closetOrganization",
+    "roomType": "bedroom",
+    "price": 26,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 55,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "intuitiveLayout",
+      "lowReachHeight"
+    ],
+    "features": [
+      "builtInStorage",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Hanging organizer that increases storage without bulky furniture.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-CORG-013-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Hanging closet organizer kit"
+  },
+  {
+    "sku": "BR-UBS-014",
+    "name": "Under-Bed Storage Container",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "underBedStorage",
+    "roomType": "bedroom",
+    "price": 19,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 75,
+    "tags": [
+      "compact",
+      "portable",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "lowReachHeight"
+    ],
+    "features": [
+      "easyToMove",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Slim storage container to keep seasonal items out of the way.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-UBS-014-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Under-bed storage container"
+  },
+  {
+    "sku": "BR-WSH-015",
+    "name": "Wall Shelf (Floating, Compact)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "floatingShelf",
+    "roomType": "bedroom",
+    "price": 21,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 40,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "wallMountReady"
+    ],
+    "features": [
+      "modularDesign",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Floating shelf to maximize vertical storage in small bedrooms.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-WSH-015-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact floating wall shelf"
+  },
+  {
+    "sku": "BR-EXC-016",
+    "name": "Extension Cord (Long Cord)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "extensionCord",
+    "roomType": "bedroom",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "cordManagement",
+      "grabFriendly",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "longCord"
+    ],
+    "shortDescription": "Long extension cord to reach outlets without clutter.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-EXC-016-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Long extension cord"
+  },
+  {
+    "sku": "BR-SPR-017",
+    "name": "Surge Protector (Multi-Outlet)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "surgeProtector",
+    "roomType": "bedroom",
+    "price": 18,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "compact",
+      "cordManagement"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "multiOutlet",
+      "surgeProtection"
+    ],
+    "shortDescription": "Surge protection with extra outlets for bedroom electronics.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-SPR-017-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Multi-outlet surge protector"
+  },
+  {
+    "sku": "BR-VAC-018",
+    "name": "Compact Vacuum (Handheld)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "vacuum",
+    "roomType": "bedroom",
+    "price": 59,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 30,
+    "tags": [
+      "compact",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyToMove",
+      "quietOperation"
+    ],
+    "shortDescription": "Handheld vacuum for quick cleanups in tight living spaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-VAC-018-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact handheld vacuum"
+  },
+  {
+    "sku": "BR-MCL-019",
+    "name": "Microfiber Cloths (Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "microfiberCloth",
+    "roomType": "bedroom",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 250,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Reusable cloths for dusting and quick wipe-downs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-MCL-019-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Microfiber cloth pack"
+  },
+  {
+    "sku": "BR-LBL-020",
+    "name": "LED Light Bulbs (Soft White)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "lightBulb",
+    "roomType": "bedroom",
+    "price": 11,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 180,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Energy-saving bulbs to keep rooms bright and comfortable.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-LBL-020-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "LED light bulbs"
+  },
+  {
+    "sku": "BR-AFR-021",
+    "name": "Air Freshener (Light Scent)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "airFreshener",
+    "roomType": "bedroom",
+    "price": 6,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Light scent freshener for small rooms without overpowering fragrance.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-AFR-021-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Air freshener"
+  },
+  {
+    "sku": "BR-RGL-022",
+    "name": "Rubber Gloves (Cleaning Pair)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "rubberGloves",
+    "roomType": "bedroom",
+    "price": 5,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 210,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Durable gloves for cleaning tasks and quick wipe-down routines.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-RGL-022-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Rubber cleaning gloves"
+  },
+  {
+    "sku": "BR-TBG-023",
+    "name": "Trash Bags (Small Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "trashBags",
+    "roomType": "bedroom",
+    "price": 8,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 190,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Small trash bags suitable for bedroom bins and daily use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-TBG-023-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Small trash bags"
+  },
+  {
+    "sku": "BR-CLC-024",
+    "name": "Multi-Purpose Cleaner (Spray)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "cleanerMultiPurpose",
+    "roomType": "bedroom",
+    "price": 7,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 130,
+    "tags": [
+      "easyClean",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Everyday cleaner for quick wipe-downs on common surfaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-CLC-024-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Multi-purpose cleaner spray"
+  },
+  {
+    "sku": "BR-MOP-025",
+    "name": "Spray Mop (Easy Use)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "mop",
+    "roomType": "bedroom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 35,
+    "tags": [
+      "easyClean",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "minimalForceRequired",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface",
+      "easyToMove"
+    ],
+    "shortDescription": "Light spray mop for quick floor cleaning without heavy buckets.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BR-MOP-025-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Spray mop for easy floor cleaning"
+  }
+]

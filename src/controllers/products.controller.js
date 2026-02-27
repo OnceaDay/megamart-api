@@ -1,45 +1,99 @@
 // src/controllers/products.controller.js
 
 const Product = require("../models/Product");
-
 const asyncHandler = require("../utils/asyncHandler");
 const validateObjectId = require("../utils/validateObjectId");
 
 /**
+ * Helpers
+ */
+const toBool = (v) => {
+  if (v === undefined) return undefined;
+  const s = String(v).toLowerCase().trim();
+  if (s === "true") return true;
+  if (s === "false") return false;
+  return undefined;
+};
+
+const toNum = (v) => {
+  if (v === undefined) return undefined;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : undefined;
+};
+
+const escapeRegex = (s = "") => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/**
  * GET /api/products
  * Supports:
- *  - category=tech
- *  - minPrice=10&maxPrice=100
- *  - inStock=true
- *  - sort=price | -price | name | -name | category | -category | createdAt | -createdAt
- *  - page=1&limit=20 (optional pagination)
+ *  - roomType, category, subcategory
+ *  - priorityLevel, budgetTier, spaceRequirement
+ *  - minPrice, maxPrice
+ *  - inStock=true|false (uses quantityAvailable)
+ *  - sort=price|-price|name|-name|category|-category|createdAt|-createdAt|updatedAt|-updatedAt
+ *  - q=searchTerm (searches name + shortDescription + tags)
+ *  - page & limit (pagination)
  */
 const getProducts = asyncHandler(async (req, res) => {
-  const { category, minPrice, maxPrice, inStock, sort, page, limit } = req.query;
+  const {
+    roomType,
+    category,
+    subcategory,
+    priorityLevel,
+    budgetTier,
+    spaceRequirement,
+    minPrice,
+    maxPrice,
+    inStock,
+    sort,
+    page,
+    limit,
+    q,
+  } = req.query;
 
   const filter = {};
 
-  if (category) {
-    filter.category = String(category).toLowerCase().trim();
-  }
+  // NOTE: Do NOT toLowerCase() these because your enums are camelCase
+  if (roomType) filter.roomType = String(roomType).trim();
+  if (category) filter.category = String(category).trim();
+  if (subcategory) filter.subcategory = String(subcategory).trim();
+  if (priorityLevel) filter.priorityLevel = String(priorityLevel).trim();
+  if (budgetTier) filter.budgetTier = String(budgetTier).trim();
+  if (spaceRequirement) filter.spaceRequirement = String(spaceRequirement).trim();
 
   // Price range
-  if (minPrice !== undefined || maxPrice !== undefined) {
+  const min = toNum(minPrice);
+  const max = toNum(maxPrice);
+  if (min !== undefined || max !== undefined) {
     filter.price = {};
-    if (minPrice !== undefined) filter.price.$gte = Number(minPrice);
-    if (maxPrice !== undefined) filter.price.$lte = Number(maxPrice);
+    if (min !== undefined) filter.price.$gte = min;
+    if (max !== undefined) filter.price.$lte = max;
   }
 
-  // inStock=true => stock > 0
-  if (inStock !== undefined) {
-    const val = String(inStock).toLowerCase();
-    if (val === "true") filter.stock = { $gt: 0 };
-    if (val === "false") filter.stock = { $gte: 0 }; // basically no-op but explicit
+  // inStock logic: your schema uses inStock + quantityAvailable
+  const inStockBool = toBool(inStock);
+  if (inStockBool === true) {
+    filter.inStock = true;
+    filter.quantityAvailable = { $gt: 0 };
+  }
+  if (inStockBool === false) {
+    // show anything that is not sellable (either out of stock OR qty 0)
+    filter.$or = [{ inStock: false }, { quantityAvailable: { $lte: 0 } }];
+  }
+
+  // #2 Search (q)
+  if (q && String(q).trim()) {
+    const term = escapeRegex(String(q).trim());
+    const rx = new RegExp(term, "i");
+    filter.$or = [
+      ...(filter.$or || []),
+      { name: rx },
+      { shortDescription: rx },
+      { tags: rx }, // matches any tag string in tags array
+    ];
   }
 
   // Sorting
-  // Accept: "price" or "-price" or "name" or "-name" etc.
-  // Also accept comma-separated: sort=category,-price
   let sortObj = { createdAt: -1 };
   if (sort) {
     sortObj = {};
@@ -52,9 +106,14 @@ const getProducts = asyncHandler(async (req, res) => {
       "price",
       "name",
       "category",
-      "stock",
+      "roomType",
+      "subcategory",
+      "priorityLevel",
+      "budgetTier",
+      "spaceRequirement",
       "createdAt",
       "updatedAt",
+      "quantityAvailable",
     ]);
 
     for (const f of fields) {
@@ -63,23 +122,31 @@ const getProducts = asyncHandler(async (req, res) => {
       if (allowed.has(key)) sortObj[key] = dir;
     }
 
-    // If user passed only invalid fields, fall back
     if (Object.keys(sortObj).length === 0) sortObj = { createdAt: -1 };
   }
 
-  // Optional pagination
+  // Pagination
   const pageNum = Math.max(Number(page || 1), 1);
-  const limitNum = Math.min(Math.max(Number(limit || 0), 0), 100); // cap at 100
-  const skip = limitNum ? (pageNum - 1) * limitNum : 0;
+  const limitNum = Math.min(Math.max(Number(limit || 20), 1), 100);
+  const skip = (pageNum - 1) * limitNum;
 
-  const query = Product.find(filter).sort(sortObj);
-  if (limitNum) query.skip(skip).limit(limitNum);
+  // #1 total + pages metadata
+  const [total, products] = await Promise.all([
+    Product.countDocuments(filter),
+    Product.find(filter).sort(sortObj).skip(skip).limit(limitNum),
+  ]);
 
-  const products = await query;
+  const pages = Math.max(Math.ceil(total / limitNum), 1);
 
   res.json({
     message: "success",
     results: products.length,
+    page: pageNum,
+    limit: limitNum,
+    total,
+    pages,
+    hasPrevPage: pageNum > 1,
+    hasNextPage: pageNum < pages,
     payload: products,
   });
 });
@@ -89,7 +156,6 @@ const getProducts = asyncHandler(async (req, res) => {
  */
 const getProductById = asyncHandler(async (req, res) => {
   const { id } = req.params;
-
   validateObjectId(id, "product id");
 
   const product = await Product.findById(id);
@@ -104,32 +170,91 @@ const getProductById = asyncHandler(async (req, res) => {
 });
 
 /**
+ * #3 GET /api/products/sku/:sku
+ */
+const getProductBySku = asyncHandler(async (req, res) => {
+  const { sku } = req.params;
+
+  const product = await Product.findOne({ sku: String(sku).trim() });
+
+  if (!product) {
+    const err = new Error("Product not found");
+    err.statusCode = 404;
+    throw err;
+  }
+
+  res.json({ message: "success", payload: product });
+});
+
+/**
+ * Sanitizer/whitelist for create/update payloads
+ * (pairs with #5 hardening)
+ */
+const pickProductFields = (body = {}) => {
+  const out = {};
+
+  const fields = [
+    "sku",
+    "name",
+    "productType",
+    "category",
+    "subcategory",
+    "roomType",
+    "price",
+    "currency",
+    "priorityLevel",
+    "budgetTier",
+    "spaceRequirement",
+    "inStock",
+    "quantityAvailable",
+    "tags",
+    "accessibilityFeatures",
+    "features",
+    "shortDescription",
+    "longDescription",
+    "primaryImage",
+    "galleryImages",
+    "imageAltText",
+    "bundleItems",
+  ];
+
+  for (const k of fields) {
+    if (body[k] !== undefined) out[k] = body[k];
+  }
+
+  // normalize common string fields
+  if (out.sku) out.sku = String(out.sku).trim();
+  if (out.name) out.name = String(out.name).trim();
+  if (out.shortDescription) out.shortDescription = String(out.shortDescription).trim();
+  if (out.longDescription !== undefined) out.longDescription = String(out.longDescription || "").trim();
+  if (out.primaryImage) out.primaryImage = String(out.primaryImage).trim();
+  if (out.imageAltText !== undefined) out.imageAltText = String(out.imageAltText || "").trim();
+
+  return out;
+};
+
+/**
  * POST /api/products
  */
 const createProduct = asyncHandler(async (req, res) => {
-  const { name, description, price, category, stock, images } = req.body;
+  const payload = pickProductFields(req.body);
 
-  const product = await Product.create({
-    name,
-    description,
-    price,
-    category,
-    stock,
-    images,
-  });
+  const product = await Product.create(payload);
 
   res.status(201).json({ message: "created", payload: product });
 });
 
 /**
- * PATCH /api/products/:id
+ * PUT /api/products/:id
+ * (You can still send partial payloads; validators will enforce enums)
  */
 const updateProduct = asyncHandler(async (req, res) => {
   const { id } = req.params;
-
   validateObjectId(id, "product id");
 
-  const updated = await Product.findByIdAndUpdate(id, req.body, {
+  const payload = pickProductFields(req.body);
+
+  const updated = await Product.findByIdAndUpdate(id, payload, {
     new: true,
     runValidators: true,
   });
@@ -144,11 +269,36 @@ const updateProduct = asyncHandler(async (req, res) => {
 });
 
 /**
+ * PATCH /api/products/:id/stock
+ * Only updates quantityAvailable + inStock
+ */
+const updateProductStock = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  validateObjectId(id, "product id");
+
+  const payload = {};
+  if (req.body.quantityAvailable !== undefined) payload.quantityAvailable = Number(req.body.quantityAvailable);
+  if (req.body.inStock !== undefined) payload.inStock = Boolean(req.body.inStock);
+
+  const updated = await Product.findByIdAndUpdate(id, payload, {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!updated) {
+    const err = new Error("Product not found");
+    err.statusCode = 404;
+    throw err;
+  }
+
+  res.json({ message: "updated-stock", payload: updated });
+});
+
+/**
  * DELETE /api/products/:id
  */
 const deleteProduct = asyncHandler(async (req, res) => {
   const { id } = req.params;
-
   validateObjectId(id, "product id");
 
   const deleted = await Product.findByIdAndDelete(id);
@@ -165,7 +315,9 @@ const deleteProduct = asyncHandler(async (req, res) => {
 module.exports = {
   getProducts,
   getProductById,
+  getProductBySku,
   createProduct,
   updateProduct,
+  updateProductStock,
   deleteProduct,
 };

@@ -1,0 +1,783 @@
+[
+  {
+    "sku": "KT-PLT-001",
+    "name": "Dinner Plates (Stackable Set)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "plates",
+    "roomType": "kitchen",
+    "price": 22,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "dishwasherSafe",
+      "spaceSaving",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "compactFootprint",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Stackable plates that store easily and clean fast.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-PLT-001-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Stackable dinner plates set"
+  },
+  {
+    "sku": "KT-BWL-002",
+    "name": "Bowls (Stackable Set)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "bowls",
+    "roomType": "kitchen",
+    "price": 18,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "dishwasherSafe",
+      "spaceSaving",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "compactFootprint",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Everyday bowls that nest neatly to save cabinet space.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-BWL-002-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Stackable bowl set"
+  },
+  {
+    "sku": "KT-MUG-003",
+    "name": "Mugs (Easy Grip Pair)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "mugs",
+    "roomType": "kitchen",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact",
+      "grabFriendly"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "oneHandOperation"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Comfortable mugs with easy-to-hold handles.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-MUG-003-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Easy grip mugs"
+  },
+  {
+    "sku": "KT-GLS-004",
+    "name": "Glasses (Compact Set)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "glasses",
+    "roomType": "kitchen",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 150,
+    "tags": [
+      "compact",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact glasses that store neatly and feel stable in-hand.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-GLS-004-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact drinking glasses"
+  },
+  {
+    "sku": "KT-POT-005",
+    "name": "Pot (Easy Clean, Medium)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "pots",
+    "roomType": "kitchen",
+    "price": 29,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 60,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "minimalForceRequired"
+    ],
+    "features": [
+      "apartmentSized",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Medium pot for everyday cooking with easy cleanup.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-POT-005-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Medium cooking pot"
+  },
+  {
+    "sku": "KT-PAN-006",
+    "name": "Pan (Nonstick, Easy Clean)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "pans",
+    "roomType": "kitchen",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 70,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "apartmentSized",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Nonstick pan sized for small stoves and quick washing.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-PAN-006-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Nonstick frying pan"
+  },
+  {
+    "sku": "KT-CBD-007",
+    "name": "Cutting Board (Non-Slip)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "cuttingBoard",
+    "roomType": "kitchen",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 110,
+    "tags": [
+      "easyClean",
+      "nonSlip"
+    ],
+    "accessibilityFeatures": [
+      "nonSlipSurface",
+      "reinforcedStability"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface",
+      "nonSlipBase"
+    ],
+    "shortDescription": "Stable cutting board that stays put during prep.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-CBD-007-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Non-slip cutting board"
+  },
+  {
+    "sku": "KT-UTN-008",
+    "name": "Utensil Set (Basic Prep Kit)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "utensils",
+    "roomType": "kitchen",
+    "price": 16,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 100,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Essential utensil kit for daily cooking and serving.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-UTN-008-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Basic kitchen utensil set"
+  },
+  {
+    "sku": "KT-KNF-009",
+    "name": "Chef Knife (Easy Grip Handle)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "knife",
+    "roomType": "kitchen",
+    "price": 19,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 85,
+    "tags": [
+      "easyClean",
+      "grabFriendly"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "minimalForceRequired"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Chef knife with grip-friendly handle for safer slicing.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-KNF-009-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Chef knife with easy grip handle"
+  },
+  {
+    "sku": "KT-MCP-010",
+    "name": "Measuring Cups (Large Markings)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "measuringCups",
+    "roomType": "kitchen",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "compact",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "highContrastMarkings",
+      "largePrintLabels"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Measuring cups with easy-to-read markings for quick prep.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-MCP-010-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Measuring cups with clear markings"
+  },
+  {
+    "sku": "KT-SAP-011",
+    "name": "Toaster (Compact Footprint)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "smallAppliance",
+    "roomType": "kitchen",
+    "price": 28,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 40,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators",
+      "pushButtonControl"
+    ],
+    "features": [
+      "compactFootprint",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact toaster for small counters and simple use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-SAP-011-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact toaster"
+  },
+  {
+    "sku": "KT-SAP-012",
+    "name": "Electric Kettle (Push Button)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "smallAppliance",
+    "roomType": "kitchen",
+    "price": 32,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 35,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "minimalForceRequired",
+      "pushButtonControl"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Simple electric kettle with easy controls and quick cleanup.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-SAP-012-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Electric kettle with push-button control"
+  },
+  {
+    "sku": "KT-SAP-013",
+    "name": "Blender (Compact, Easy Clean)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "smallAppliance",
+    "roomType": "kitchen",
+    "price": 39,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 28,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Compact blender that’s easy to rinse and store.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-SAP-013-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact blender"
+  },
+  {
+    "sku": "KT-SAP-014",
+    "name": "Coffee Maker (Simple Controls)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "smallAppliance",
+    "roomType": "kitchen",
+    "price": 34,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 30,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation",
+      "pushButtonControl"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Basic coffee maker with easy operation for daily use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-SAP-014-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Coffee maker with simple controls"
+  },
+  {
+    "sku": "KT-FST-015",
+    "name": "Food Storage Containers (Stackable)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "foodStorage",
+    "roomType": "kitchen",
+    "price": 17,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 95,
+    "tags": [
+      "easyClean",
+      "spaceSaving",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Stackable containers that store leftovers without taking over cabinets.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-FST-015-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Stackable food storage containers"
+  },
+  {
+    "sku": "KT-FST-016",
+    "name": "Zip Bags (Assorted Sizes)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "foodStorage",
+    "roomType": "kitchen",
+    "price": 6,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 220,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "oneHandOperation"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Assorted zip bags for simple storage and quick organization.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-FST-016-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Zip bags assortment"
+  },
+  {
+    "sku": "KT-KCL-017",
+    "name": "Dish Soap (Everyday)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "kitchenCleaning",
+    "roomType": "kitchen",
+    "price": 4,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 180,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Everyday dish soap for quick cleanup after meals.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-KCL-017-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Dish soap"
+  },
+  {
+    "sku": "KT-KCL-018",
+    "name": "Sponges (Non-Scratch Pack)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "kitchenCleaning",
+    "roomType": "kitchen",
+    "price": 5,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 260,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Non-scratch sponges for dishes and counters.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-KCL-018-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Non-scratch sponges"
+  },
+  {
+    "sku": "KT-KCL-019",
+    "name": "Drying Rack (Compact)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "kitchenCleaning",
+    "roomType": "kitchen",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 65,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "intuitiveLayout"
+    ],
+    "features": [
+      "compactFootprint",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact drying rack to keep counters organized in small kitchens.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-KCL-019-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact dish drying rack"
+  },
+  {
+    "sku": "KT-TRC-020",
+    "name": "Kitchen Trash Can (Compact)",
+    "productType": "single",
+    "category": "kitchenEssentials",
+    "subcategory": "trashCan",
+    "roomType": "kitchen",
+    "price": 22,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 55,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Compact trash can sized for tight kitchens and easy cleaning.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-TRC-020-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact kitchen trash can"
+  },
+  {
+    "sku": "KT-EXC-021",
+    "name": "Extension Cord (Counter Reach)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "extensionCord",
+    "roomType": "kitchen",
+    "price": 13,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 110,
+    "tags": [
+      "cordManagement",
+      "grabFriendly",
+      "portable"
+    ],
+    "accessibilityFeatures": [],
+    "features": [
+      "compactFootprint",
+      "longCord"
+    ],
+    "shortDescription": "Extra reach for small appliances without messy cable runs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-EXC-021-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Kitchen extension cord"
+  },
+  {
+    "sku": "KT-SPR-022",
+    "name": "Surge Protector (Kitchen Safe)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "surgeProtector",
+    "roomType": "kitchen",
+    "price": 19,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 95,
+    "tags": [
+      "compact",
+      "cordManagement"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "multiOutlet",
+      "surgeProtection"
+    ],
+    "shortDescription": "Surge protection for countertop appliances with easy-access outlets.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-SPR-022-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Kitchen surge protector"
+  },
+  {
+    "sku": "KT-CLC-023",
+    "name": "Multi-Purpose Cleaner (Kitchen)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "cleanerMultiPurpose",
+    "roomType": "kitchen",
+    "price": 7,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "easyClean",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Cleaner spray for counters, tables, and common kitchen surfaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-CLC-023-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Kitchen multi-purpose cleaner"
+  },
+  {
+    "sku": "KT-MCL-024",
+    "name": "Microfiber Cloths (Kitchen Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "microfiberCloth",
+    "roomType": "kitchen",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 200,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Reusable cloth pack for polishing and quick cleanup.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-MCL-024-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Kitchen microfiber cloth pack"
+  },
+  {
+    "sku": "KT-TBG-025",
+    "name": "Trash Bags (Kitchen Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "trashBags",
+    "roomType": "kitchen",
+    "price": 10,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Kitchen trash bags sized for everyday disposal needs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/KT-TBG-025-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Kitchen trash bags pack"
+  }
+]

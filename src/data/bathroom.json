@@ -1,0 +1,770 @@
+[
+  {
+    "sku": "BA-TWL-001",
+    "name": "Bath Towels (Quick Dry Set)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "towel",
+    "roomType": "bathroom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 100,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift"
+    ],
+    "features": [
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Quick-dry towels that store easily in small bathrooms.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TWL-001-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Quick dry bath towels"
+  },
+  {
+    "sku": "BA-WCL-002",
+    "name": "Washcloths (Soft Pack)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "washcloth",
+    "roomType": "bathroom",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 180,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Soft washcloth pack for daily hygiene routines.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-WCL-002-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Washcloth pack"
+  },
+  {
+    "sku": "BA-SHC-003",
+    "name": "Shower Curtain (Water Resistant)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "showerCurtain",
+    "roomType": "bathroom",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 90,
+    "tags": [
+      "easyClean",
+      "waterResistant"
+    ],
+    "accessibilityFeatures": [
+      "moldResistant"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Water-resistant curtain for cleaner showers and easier upkeep.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-SHC-003-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Water resistant shower curtain"
+  },
+  {
+    "sku": "BA-SHL-004",
+    "name": "Shower Liner (Mold Resistant)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "showerLiner",
+    "roomType": "bathroom",
+    "price": 10,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 110,
+    "tags": [
+      "easyClean",
+      "waterResistant"
+    ],
+    "accessibilityFeatures": [
+      "moldResistant"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Mold-resistant liner to keep shower areas cleaner longer.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-SHL-004-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Mold resistant shower liner"
+  },
+  {
+    "sku": "BA-BMT-005",
+    "name": "Bath Mat (Non-Slip)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "bathMat",
+    "roomType": "bathroom",
+    "price": 16,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 85,
+    "tags": [
+      "easyClean",
+      "nonSlip"
+    ],
+    "accessibilityFeatures": [
+      "floorGripBase",
+      "nonSlipSurface"
+    ],
+    "features": [
+      "easyCleanSurface",
+      "nonSlipBase"
+    ],
+    "shortDescription": "Non-slip bath mat to improve safety on wet floors.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-BMT-005-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Non-slip bath mat"
+  },
+  {
+    "sku": "BA-TBR-006",
+    "name": "Toilet Brush (Easy Clean)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "toiletBrush",
+    "roomType": "bathroom",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 100,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Compact toilet brush designed for simple cleanup and storage.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TBR-006-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Toilet brush set"
+  },
+  {
+    "sku": "BA-TLT-007",
+    "name": "Toiletry Kit (Basic Hygiene)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "toiletry",
+    "roomType": "bathroom",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "compact",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "intuitiveLayout",
+      "oneHandOperation"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Basic toiletry kit to cover everyday bathroom needs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TLT-007-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Basic toiletry kit"
+  },
+  {
+    "sku": "BA-THD-008",
+    "name": "Toothbrush Holder (Easy Clean)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "toothbrushHolder",
+    "roomType": "bathroom",
+    "price": 7,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 130,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Simple holder to keep toothbrushes organized and accessible.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-THD-008-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Toothbrush holder"
+  },
+  {
+    "sku": "BA-TPR-009",
+    "name": "Toilet Paper (Value Pack)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "toiletPaper",
+    "roomType": "bathroom",
+    "price": 11,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 200,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Reliable value pack sized for apartment storage.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TPR-009-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Toilet paper value pack"
+  },
+  {
+    "sku": "BA-TBN-010",
+    "name": "Bathroom Trash Bin (Small)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "trashBin",
+    "roomType": "bathroom",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 90,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Small bin designed to fit beside sinks or toilets.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TBN-010-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Small bathroom trash bin"
+  },
+  {
+    "sku": "BA-PLG-011",
+    "name": "Plunger (Compact)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "plunger",
+    "roomType": "bathroom",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 70,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "minimalForceRequired"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Compact plunger that stores neatly and is ready when needed.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-PLG-011-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact plunger"
+  },
+  {
+    "sku": "BA-DRN-012",
+    "name": "Drain Cleaner (Maintenance)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "drainCleaner",
+    "roomType": "bathroom",
+    "price": 8,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 60,
+    "tags": [
+      "compact",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Basic drain maintenance solution for common clogs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-DRN-012-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Drain cleaner"
+  },
+  {
+    "sku": "BA-CLC-013",
+    "name": "Tile Cleaner (Bathroom)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "cleanerTile",
+    "roomType": "bathroom",
+    "price": 7,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "easyClean",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Tile cleaner for quick refresh of shower and sink areas.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-CLC-013-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom tile cleaner"
+  },
+  {
+    "sku": "BA-MOP-014",
+    "name": "Spray Mop (Bathroom Floors)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "mop",
+    "roomType": "bathroom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 30,
+    "tags": [
+      "easyClean",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "minimalForceRequired",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface",
+      "easyToMove"
+    ],
+    "shortDescription": "Light spray mop for easy bathroom floor cleaning.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-MOP-014-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom spray mop"
+  },
+  {
+    "sku": "BA-WFS-015",
+    "name": "Wall Shelf (Bathroom Compact)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "wallShelf",
+    "roomType": "bathroom",
+    "price": 19,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 45,
+    "tags": [
+      "compact",
+      "spaceSaving",
+      "waterResistant"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "wallMountReady"
+    ],
+    "features": [
+      "modularDesign",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact wall shelf to add storage without crowding the bathroom.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-WFS-015-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom wall shelf"
+  },
+  {
+    "sku": "BA-HNG-016",
+    "name": "Hanging Organizer (Shower)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "hangingOrganizer",
+    "roomType": "bathroom",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 75,
+    "tags": [
+      "compact",
+      "spaceSaving",
+      "waterResistant"
+    ],
+    "accessibilityFeatures": [
+      "intuitiveLayout",
+      "lowReachHeight"
+    ],
+    "features": [
+      "modularDesign",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Shower organizer that keeps toiletries reachable and off ledges.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-HNG-016-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Hanging shower organizer"
+  },
+  {
+    "sku": "BA-EXC-017",
+    "name": "Extension Cord (Bathroom Safe Use)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "extensionCord",
+    "roomType": "bathroom",
+    "price": 13,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 60,
+    "tags": [
+      "cordManagement",
+      "grabFriendly",
+      "portable"
+    ],
+    "accessibilityFeatures": [],
+    "features": [
+      "compactFootprint",
+      "longCord"
+    ],
+    "shortDescription": "Extra reach for appliances used outside the bathroom area.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-EXC-017-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Extension cord"
+  },
+  {
+    "sku": "BA-SPR-018",
+    "name": "Surge Protector (Compact)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "surgeProtector",
+    "roomType": "bathroom",
+    "price": 18,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 55,
+    "tags": [
+      "compact",
+      "cordManagement"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "multiOutlet",
+      "surgeProtection"
+    ],
+    "shortDescription": "Compact surge protection for devices used in nearby rooms.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-SPR-018-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact surge protector"
+  },
+  {
+    "sku": "BA-RGL-019",
+    "name": "Rubber Gloves (Bathroom Pair)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "rubberGloves",
+    "roomType": "bathroom",
+    "price": 5,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 170,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Gloves for bathroom cleaning tasks and surface wipe-downs.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-RGL-019-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Rubber gloves"
+  },
+  {
+    "sku": "BA-MCL-020",
+    "name": "Microfiber Cloths (Bathroom Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "microfiberCloth",
+    "roomType": "bathroom",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Reusable cloths for mirrors, sinks, and quick cleaning.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-MCL-020-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom microfiber cloths"
+  },
+  {
+    "sku": "BA-TBG-021",
+    "name": "Trash Bags (Bathroom Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "trashBags",
+    "roomType": "bathroom",
+    "price": 8,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 150,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Trash bags sized for small bathroom bins and daily use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TBG-021-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom trash bags"
+  },
+  {
+    "sku": "BA-LBL-022",
+    "name": "LED Light Bulbs (Bathroom)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "lightBulb",
+    "roomType": "bathroom",
+    "price": 11,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 90,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Bright bulbs for clearer visibility in bathrooms.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-LBL-022-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "LED bulbs for bathroom"
+  },
+  {
+    "sku": "BA-AFR-023",
+    "name": "Air Freshener (Bathroom)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "airFreshener",
+    "roomType": "bathroom",
+    "price": 6,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Light freshener for small bathrooms and enclosed spaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-AFR-023-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Bathroom air freshener"
+  },
+  {
+    "sku": "BA-VAC-024",
+    "name": "Compact Vacuum (Quick Cleanup)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "vacuum",
+    "roomType": "bathroom",
+    "price": 59,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 18,
+    "tags": [
+      "compact",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyToMove",
+      "quietOperation"
+    ],
+    "shortDescription": "Compact vacuum for hair, dust, and small bathroom messes.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-VAC-024-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact vacuum for bathroom"
+  },
+  {
+    "sku": "BA-TBN-025",
+    "name": "Bathroom Trash Bin (Step-Free)",
+    "productType": "single",
+    "category": "bathroomEssentials",
+    "subcategory": "trashBin",
+    "roomType": "bathroom",
+    "price": 16,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 70,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "minimalForceRequired",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Small bin with simple opening for easier daily use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/BA-TBN-025-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Step-free bathroom trash bin"
+  }
+]

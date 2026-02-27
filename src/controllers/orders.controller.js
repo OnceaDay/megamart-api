@@ -1,5 +1,7 @@
 // src/controllers/orders.controller.js
 
+const mongoose = require("mongoose");
+
 const Order = require("../models/Order");
 const Cart = require("../models/Cart");
 const Customer = require("../models/Customer");
@@ -11,84 +13,121 @@ const requireValidId = require("../utils/validateObjectId");
 /**
  * POST /api/orders/from-cart/:customerId
  * - pulls cart
- * - checks stock
- * - decrements stock (atomically per product)
+ * - checks quantityAvailable
+ * - decrements quantityAvailable (atomic)
+ * - keeps inStock aligned
  * - creates order with item snapshots
  * - clears cart
+ *
+ * IMPORTANT: uses a MongoDB transaction so it's all-or-nothing.
  */
 const placeOrderFromCart = asyncHandler(async (req, res) => {
   const { customerId } = req.params;
   requireValidId(customerId, "customerId");
 
-  const customerExists = await Customer.exists({ _id: customerId });
-  if (!customerExists) {
-    const err = new Error("Customer not found");
-    err.statusCode = 404;
-    throw err;
-  }
+  // Start a transaction session
+  const session = await mongoose.startSession();
+  session.startTransaction();
 
-  const cart = await Cart.findOne({ customer: customerId }).populate("items.productId");
-  if (!cart || cart.items.length === 0) {
-    const err = new Error("Cart is empty");
-    err.statusCode = 400;
-    throw err;
-  }
-
-  // Build order snapshot items
-  const orderItems = [];
-  let total = 0;
-
-  for (const item of cart.items) {
-    const productDoc = item.productId;
-
-    if (!productDoc) {
-      const err = new Error("A product in the cart no longer exists");
-      err.statusCode = 409;
+  try {
+    const customerExists = await Customer.exists({ _id: customerId }).session(session);
+    if (!customerExists) {
+      const err = new Error("Customer not found");
+      err.statusCode = 404;
       throw err;
     }
 
-    const qty = item.quantity;
+    const cart = await Cart.findOne({ customer: customerId })
+      .populate("items.productId")
+      .session(session);
 
-    // Stock decrement (atomic): only decrement if stock >= qty
-    const updatedProduct = await Product.findOneAndUpdate(
-      { _id: productDoc._id, stock: { $gte: qty } },
-      { $inc: { stock: -qty } },
-      { new: true }
+    if (!cart || cart.items.length === 0) {
+      const err = new Error("Cart is empty");
+      err.statusCode = 400;
+      throw err;
+    }
+
+    const orderItems = [];
+    let total = 0;
+
+    for (const item of cart.items) {
+      const productDoc = item.productId;
+
+      if (!productDoc) {
+        const err = new Error("A product in the cart no longer exists");
+        err.statusCode = 409;
+        throw err;
+      }
+
+      const qty = item.quantity;
+
+      if (!Number.isFinite(qty) || qty <= 0) {
+        const err = new Error(`Invalid quantity for product: ${productDoc.name}`);
+        err.statusCode = 400;
+        throw err;
+      }
+
+      /**
+       * Atomic decrement (only if enough stock), AND keep inStock aligned.
+       * Uses an update pipeline so inStock updates based on the new quantityAvailable.
+       */
+      const updatedProduct = await Product.findOneAndUpdate(
+        { _id: productDoc._id, quantityAvailable: { $gte: qty } },
+        [
+          { $set: { quantityAvailable: { $subtract: ["$quantityAvailable", qty] } } },
+          { $set: { inStock: { $gt: ["$quantityAvailable", 0] } } },
+        ],
+        { new: true, session }
+      );
+
+      if (!updatedProduct) {
+        const err = new Error(`Insufficient stock for product: ${productDoc.name}`);
+        err.statusCode = 409;
+        throw err;
+      }
+
+      // Snapshot the price/name at time of purchase (from the updated doc)
+      const price = updatedProduct.price;
+      const lineTotal = price * qty;
+      total += lineTotal;
+
+      orderItems.push({
+        productId: updatedProduct._id,
+        name: updatedProduct.name,
+        price,
+        quantity: qty,
+        lineTotal,
+      });
+    }
+
+    const createdOrders = await Order.create(
+      [
+        {
+          customer: customerId,
+          items: orderItems,
+          total,
+          status: "pending",
+        },
+      ],
+      { session }
     );
 
-    if (!updatedProduct) {
-      const err = new Error(`Insufficient stock for product: ${productDoc.name}`);
-      err.statusCode = 409;
-      throw err;
-    }
+    // Clear cart after successful order creation
+    cart.items = [];
+    await cart.save({ session });
 
-    const lineTotal = productDoc.price * qty;
-    total += lineTotal;
+    await session.commitTransaction();
+    session.endSession();
 
-    orderItems.push({
-      productId: productDoc._id,
-      name: productDoc.name,
-      price: productDoc.price,
-      quantity: qty,
-      lineTotal,
+    res.status(201).json({
+      message: "order placed",
+      payload: createdOrders[0],
     });
+  } catch (err) {
+    await session.abortTransaction();
+    session.endSession();
+    throw err;
   }
-
-  const order = await Order.create({
-    customer: customerId,
-    items: orderItems,
-    total,
-    status: "pending",
-  });
-
-  // Clear the cart after successful order
-  cart.items = [];
-  await cart.save();
-
-  res.status(201).json({
-    message: "order placed",
-    payload: order,
-  });
 });
 
 /**
@@ -96,7 +135,7 @@ const placeOrderFromCart = asyncHandler(async (req, res) => {
  * Optional query params:
  *  - customer=<customerId>
  *  - status=pending|shipped|delivered|cancelled
- *  - sort=createdAt|-createdAt|total|-total
+ *  - sort=createdAt|-createdAt|total|-total|status|-status
  */
 const getOrders = asyncHandler(async (req, res) => {
   const { customer, status, sort } = req.query;
@@ -122,6 +161,7 @@ const getOrders = asyncHandler(async (req, res) => {
       const key = f.replace(/^-/, "");
       if (allowed.has(key)) sortObj[key] = dir;
     }
+
     if (Object.keys(sortObj).length === 0) sortObj = { createdAt: -1 };
   }
 

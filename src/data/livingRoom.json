@@ -1,0 +1,801 @@
+[
+  {
+    "sku": "LR-COU-001",
+    "name": "Compact Couch (Supportive Seating)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "couch",
+    "roomType": "livingRoom",
+    "price": 399,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 10,
+    "tags": [
+      "compact",
+      "spaceSaving",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "armrestSupport",
+      "seatedUseFriendly",
+      "transferFriendly"
+    ],
+    "features": [
+      "apartmentSized",
+      "firmSupport",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Supportive couch sized for apartment living with easier seated use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-COU-001-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact supportive couch"
+  },
+  {
+    "sku": "LR-SET-002",
+    "name": "Seating Chair (Ergonomic)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "seating",
+    "roomType": "livingRoom",
+    "price": 149,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 18,
+    "tags": [
+      "compact",
+      "ergonomic",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "armrestSupport",
+      "ergonomicDesign",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "ergonomicSupport",
+      "firmSupport",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Ergonomic chair that supports longer seated comfort in small spaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-SET-002-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Ergonomic living room chair"
+  },
+  {
+    "sku": "LR-DES-003",
+    "name": "Desk (Roll-Under Clearance)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "desk",
+    "roomType": "livingRoom",
+    "price": 129,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 16,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "rollUnderClearance",
+      "seatedUseFriendly",
+      "wheelchairAccessible"
+    ],
+    "features": [
+      "apartmentSized",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact desk designed to support seated use and easier clearance.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-DES-003-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact desk with clearance"
+  },
+  {
+    "sku": "LR-DCH-004",
+    "name": "Desk Chair (Lumbar Support)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "deskChair",
+    "roomType": "livingRoom",
+    "price": 99,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 25,
+    "tags": [
+      "compact",
+      "ergonomic",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "ergonomicDesign",
+      "lumbarSupport",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "compactFootprint",
+      "ergonomicSupport",
+      "firmSupport"
+    ],
+    "shortDescription": "Supportive desk chair with lumbar comfort for daily work.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-DCH-004-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Desk chair with lumbar support"
+  },
+  {
+    "sku": "LR-DIN-005",
+    "name": "Dining Table (Apartment Sized)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "diningTable",
+    "roomType": "livingRoom",
+    "price": 179,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 14,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "apartmentSized",
+      "fitsSmallRooms",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Apartment-sized table that fits small layouts without crowding.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-DIN-005-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Apartment sized dining table"
+  },
+  {
+    "sku": "LR-DCH-006",
+    "name": "Dining Chair (Easy Move)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "diningChair",
+    "roomType": "livingRoom",
+    "price": 59,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 40,
+    "tags": [
+      "compact",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "easyToMove",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Light dining chair that’s easy to reposition and store.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-DCH-006-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Lightweight dining chair"
+  },
+  {
+    "sku": "LR-WFS-007",
+    "name": "Wall Shelf (Living Room)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "wallShelf",
+    "roomType": "livingRoom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 45,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "wallMountReady"
+    ],
+    "features": [
+      "modularDesign",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Wall shelf to add storage without using floor space.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-WFS-007-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room wall shelf"
+  },
+  {
+    "sku": "LR-FSH-008",
+    "name": "Floating Shelf (Compact)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "floatingShelf",
+    "roomType": "livingRoom",
+    "price": 21,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 55,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "wallMountReady"
+    ],
+    "features": [
+      "modularDesign",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Floating shelf for small living rooms and tidy storage.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-FSH-008-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact floating shelf"
+  },
+  {
+    "sku": "LR-HNG-009",
+    "name": "Hanging Organizer (Entry)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "hangingOrganizer",
+    "roomType": "livingRoom",
+    "price": 15,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 70,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "intuitiveLayout",
+      "lowReachHeight"
+    ],
+    "features": [
+      "builtInStorage",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Hanging organizer to keep daily items reachable near the entry.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-HNG-009-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Hanging organizer for entry"
+  },
+  {
+    "sku": "LR-CH-010",
+    "name": "Ceiling Hook (Heavy Duty)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "ceilingHook",
+    "roomType": "livingRoom",
+    "price": 8,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "heavyDuty",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "wallMountReady"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Heavy-duty hook to add vertical storage without clutter.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-CH-010-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Heavy duty ceiling hook"
+  },
+  {
+    "sku": "LR-SBN-011",
+    "name": "Storage Bin (Stackable)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "storageBin",
+    "roomType": "livingRoom",
+    "price": 12,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 130,
+    "tags": [
+      "portable",
+      "spaceSaving",
+      "stackable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyToMove",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Stackable bin for organizing supplies without taking over shelves.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-SBN-011-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Stackable storage bin"
+  },
+  {
+    "sku": "LR-EXC-012",
+    "name": "Extension Cord (Living Room)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "extensionCord",
+    "roomType": "livingRoom",
+    "price": 14,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "cordManagement",
+      "grabFriendly",
+      "portable"
+    ],
+    "accessibilityFeatures": [],
+    "features": [
+      "compactFootprint",
+      "longCord"
+    ],
+    "shortDescription": "Extra reach for lamps and devices in limited-outlet apartments.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-EXC-012-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room extension cord"
+  },
+  {
+    "sku": "LR-SPR-013",
+    "name": "Surge Protector (Living Room)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "surgeProtector",
+    "roomType": "livingRoom",
+    "price": 19,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact",
+      "cordManagement"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "compactFootprint",
+      "multiOutlet",
+      "surgeProtection"
+    ],
+    "shortDescription": "Surge protector for TV, chargers, and everyday electronics.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-SPR-013-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room surge protector"
+  },
+  {
+    "sku": "LR-VAC-014",
+    "name": "Compact Vacuum (Living Room)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "vacuum",
+    "roomType": "livingRoom",
+    "price": 59,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 24,
+    "tags": [
+      "compact",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "lightweightLift",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyToMove",
+      "quietOperation"
+    ],
+    "shortDescription": "Quick-clean vacuum for daily living room messes and dust.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-VAC-014-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room compact vacuum"
+  },
+  {
+    "sku": "LR-MOP-015",
+    "name": "Spray Mop (Living Room Floors)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "mop",
+    "roomType": "livingRoom",
+    "price": 24,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 28,
+    "tags": [
+      "easyClean",
+      "lightweight",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "minimalForceRequired",
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint",
+      "easyCleanSurface",
+      "easyToMove"
+    ],
+    "shortDescription": "Light spray mop for quick floor refresh without heavy equipment.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-MOP-015-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room spray mop"
+  },
+  {
+    "sku": "LR-CLC-016",
+    "name": "Multi-Purpose Cleaner (Living Room)",
+    "productType": "single",
+    "category": "cleaningMaintenance",
+    "subcategory": "cleanerMultiPurpose",
+    "roomType": "livingRoom",
+    "price": 7,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 130,
+    "tags": [
+      "easyClean",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Cleaner spray for tables, shelves, and everyday surfaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-CLC-016-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room multi-purpose cleaner"
+  },
+  {
+    "sku": "LR-RGL-017",
+    "name": "Rubber Gloves (Cleaning Pair)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "rubberGloves",
+    "roomType": "livingRoom",
+    "price": 5,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 160,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Gloves for cleaning tasks and quick dusting routines.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-RGL-017-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Rubber gloves for cleaning"
+  },
+  {
+    "sku": "LR-MCL-018",
+    "name": "Microfiber Cloths (Living Room Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "microfiberCloth",
+    "roomType": "livingRoom",
+    "price": 9,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 190,
+    "tags": [
+      "compact",
+      "easyClean"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "easyCleanSurface"
+    ],
+    "shortDescription": "Microfiber cloths for dusting and polishing furniture surfaces.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-MCL-018-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room microfiber cloth pack"
+  },
+  {
+    "sku": "LR-TBG-019",
+    "name": "Trash Bags (Living Room Pack)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "trashBags",
+    "roomType": "livingRoom",
+    "price": 8,
+    "currency": "USD",
+    "priorityLevel": "essential",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 150,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles"
+    ],
+    "features": [
+      "spaceEfficient"
+    ],
+    "shortDescription": "Trash bags sized for common household bins and daily use.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-TBG-019-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Trash bags pack"
+  },
+  {
+    "sku": "LR-LBL-020",
+    "name": "LED Light Bulbs (Living Room)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "lightBulb",
+    "roomType": "livingRoom",
+    "price": 11,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 150,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "clearVisualIndicators"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Bright bulbs for better visibility and comfortable lighting.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-LBL-020-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "LED bulbs for living room"
+  },
+  {
+    "sku": "LR-AFR-021",
+    "name": "Air Freshener (Living Room)",
+    "productType": "single",
+    "category": "otherEssentials",
+    "subcategory": "airFreshener",
+    "roomType": "livingRoom",
+    "price": 6,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 140,
+    "tags": [
+      "compact"
+    ],
+    "accessibilityFeatures": [
+      "oneHandOperation"
+    ],
+    "features": [
+      "compactFootprint"
+    ],
+    "shortDescription": "Light freshener for shared living spaces without heavy scent.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-AFR-021-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Living room air freshener"
+  },
+  {
+    "sku": "LR-SBN-022",
+    "name": "Storage Bin (Portable)",
+    "productType": "single",
+    "category": "storageOrganization",
+    "subcategory": "storageBin",
+    "roomType": "livingRoom",
+    "price": 11,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "low",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 120,
+    "tags": [
+      "compact",
+      "portable"
+    ],
+    "accessibilityFeatures": [
+      "easyGripHandles",
+      "lightweightLift"
+    ],
+    "features": [
+      "easyToMove",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Portable bin for quick decluttering and flexible storage.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-SBN-022-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Portable storage bin"
+  },
+  {
+    "sku": "LR-SET-023",
+    "name": "Seating Chair (Compact, Supportive)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "seating",
+    "roomType": "livingRoom",
+    "price": 129,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "mid",
+    "spaceRequirement": "low",
+    "inStock": true,
+    "quantityAvailable": 20,
+    "tags": [
+      "compact",
+      "supportive"
+    ],
+    "accessibilityFeatures": [
+      "armrestSupport",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "firmSupport",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Compact chair that supports daily seated comfort in small rooms.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-SET-023-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact supportive chair"
+  },
+  {
+    "sku": "LR-COU-024",
+    "name": "Compact Couch (Easy Clean)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "couch",
+    "roomType": "livingRoom",
+    "price": 429,
+    "currency": "USD",
+    "priorityLevel": "recommended",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 8,
+    "tags": [
+      "compact",
+      "easyClean",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "apartmentSized",
+      "easyCleanSurface",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Apartment couch designed for easier maintenance and everyday comfort.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-COU-024-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Compact easy-clean couch"
+  },
+  {
+    "sku": "LR-DIN-025",
+    "name": "Dining Table (Corner Friendly)",
+    "productType": "single",
+    "category": "mainFurniture",
+    "subcategory": "diningTable",
+    "roomType": "livingRoom",
+    "price": 159,
+    "currency": "USD",
+    "priorityLevel": "optional",
+    "budgetTier": "mid",
+    "spaceRequirement": "medium",
+    "inStock": true,
+    "quantityAvailable": 10,
+    "tags": [
+      "compact",
+      "spaceSaving"
+    ],
+    "accessibilityFeatures": [
+      "roundedEdges",
+      "seatedUseFriendly"
+    ],
+    "features": [
+      "cornerFriendly",
+      "fitsSmallRooms",
+      "spaceEfficient"
+    ],
+    "shortDescription": "Corner-friendly table to maximize usable room space.",
+    "longDescription": "",
+    "primaryImage": "/img/placeholders/LR-DIN-025-main.jpg",
+    "galleryImages": [],
+    "imageAltText": "Corner friendly dining table"
+  }
+]

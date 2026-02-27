@@ -1,3 +1,53 @@
-/node_modules
-/.env
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Environment Variables (DO NOT COMMIT)
+# =========================
+.env
+.env.*
+
+# =========================
+# Build / Output
+# =========================
+dist/
+dist-ssr/
+build/
+coverage/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Local Config Files
+# =========================
+*.local
+
+# =========================
+# OS Files
+# =========================
 .DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
